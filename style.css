@@ -1,0 +1,127 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 2em;
+    background-color: aqua;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+  .image-container {
+    margin-top: 20px;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .status-panel {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .status-panel span {
+    margin-left: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .status {
+    background-color: #d4edda;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 20px;
+  }
+  
+  .control-panel {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .control-panel button {
+    margin: 10px;
+    padding: 15px;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+    transition: background-color 0.25s
+  }
+  
+  .arrow-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: repeat(3, 80px);
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .arrow-buttons button {
+    width: 80px;
+    height: 80px;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    background-color: #fafbfc;
+    border: 2px solid #070707;
+  }
+  
+  .arrow-buttons button:hover {
+    background-color: #03468d;
+    color: white;
+  }
+
+  #Left {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  
+  #Forward {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  
+  #Right {
+    grid-column: 3;
+    grid-row: 2;
+  }
+  
+  #Backward {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  
+  #Stop {
+    grid-column: 2;
+    grid-row: 2;
+    width: 80px;
+    height: 80px;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    border: 2px solid darkred;
+  }
+
+  #Stop:hover {
+    background-color: darkred;
+    cursor: pointer;
+  }
+  
+  .status span {
+    font-weight: bold;
+  }
+  
+  .status-success {
+    color: green;
+    font-size: 1.2rem;
+    margin-left: 10px;
+  }
+  

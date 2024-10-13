@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CS498: IoT - Lab 2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1> CS 498 IOT - LAB 2</h1>
+
+    <div class="image-container">
+      <img src="/Users/tanay/Desktop/my-electron-app/Picar-X.jpeg" alt="Picar pic" width="300" height="300">
+      <br>
+    </div>
+
+    <div class="status-panel">
+      <span><strong>Obstacle Distance:</strong></span>
+      <strong><span id="ultrasonic_distance">0</span></strong>
+    </div>
+
+    <div class="status-panel">
+      <span><strong>Current status:</strong></span>
+      <strong><span id="is_moving">False</span></strong>
+    </div>
+
+    <div class="control-panel">
+      <div class="arrow-buttons">
+        <button id="Left" onclick="send_message_to_car('left')">←</button>
+        <button id="Forward" onclick="send_message_to_car('forward')">↑</button>
+        <button id="Right" onclick="send_message_to_car('right')">→</button>
+        <button id="Backward" onclick="send_message_to_car('backward')">↓</button>
+        <button id="Stop" onclick="send_message_to_car('stop')">Stop</button>
+      </div>
+    </div>
+
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
